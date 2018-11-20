@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JQuery Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+    #loader { margin:10px 0 0 36px; } 
+    #loader span {  display:block; width:6px; float:left; margin-right:6px;  border:1px solid #336633; position:relative;  background-color:#ccffcc; } 
+    #loader .bar-0 { height:15px; bottom:-20px; } 
+    #loader .bar-1 { height:25px; bottom:-10px; } 
+    #loader .bar-2 { height:35px; margin-right:0; }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+
+
+        <button id="go">Initiate the action</button>
+
+
+
+
+    <script type="text/javascript" src="../public/js/jquery.1.11.1.js"></script>        
+    <script >
+        var loader = $("<div></div>",
+         {    id: "loader"  }).css("display", "none"),
+           bar = $("<span></span>").css("opacity", 0.2),
+             loadingInterval = null;
+
+  for (var x = 0; x < 3; x++) {
+        bar.clone().addClass("bar-" + x).appendTo(loader);
+          }
+
+  loader.insertAfter("#go");
+  function runLoader() { 
+         var firstBar = loader.children(":first"),
+             secondBar = loader.children().eq(1), 
+             thirdBar = loader.children(":last");
+
+    firstBar.fadeTo("fast", 1, function(){ 
+             firstBar.fadeTo("fast", 0.2, function() {
+                secondBar.fadeTo("fast", 1, function() {
+                    secondBar.fadeTo("fast", 0.2, function() { 
+                        thirdBar.fadeTo("fast", 1, function() { 
+                            thirdBar.fadeTo("fast", 0.2); 
+                        });  
+                    });  
+                });  
+            }); 
+       });
+
+  };
+
+$("#go").toggle(function() { 
+     loader.show();
+     loadingInterval = setInterval(function() {
+        runLoader(); 
+        }, 1200);
+    },
+        function() {
+            loader.hide();
+            clearInterval(loadingInterval);
+            });
+    
+    </script>
+</body>
+</html>

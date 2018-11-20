@@ -1,0 +1,28 @@
+#noContent{
+    height: 50vh;
+    margin: auto;
+}
+#noContent>div>img{
+    height: -webkit-fill-available;
+}
+.a_blog_card{
+    margin: 0 15px 15px 0 !important;
+    padding: 0 1px 0 1px;
+ 
+}
+#view_blog{
+    float:right;
+    padding:10px;
+    cursor: pointer; 
+    /* positioning view btn */
+    position: absolute;
+    bottom: 60px;
+    right: 11px;
+}
+#view_blog>a{
+    text-decoration: none;
+    color: white;
+}
+.bg-color{
+    background-color: #0f7889;
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Design</title>
+  <link rel="stylesheet" href="../public/bootstrap4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/animate.css">
+  <link rel="stylesheet" href="../public/css/w3.css">
+  <link href="../public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <style media="screen">
+
+.box_img{
+    height: 90px;
+    width: 100px;
+    margin: 10px;
+    float: left;
+    border: 2px solid grey;
+    cursor: pointer !important;
+    background: crimson;
+}
+
+.sideB{
+    float:left;
+}
+#box_img01{
+    width: 5vw;
+    height: 100vh;
+    background: rgb(40, 58, 61);
+}
+#box_img02{
+    height: 100vh;
+    background: rebeccapurple;
+}
+.full_img{
+    width:400px;
+    height: 350px;
+    background: greenyellow;
+    margin-top: 10%;
+    margin-left: 9%;
+}
+.main-container{
+    background: rgb(218, 130, 58);
+    height:91vh;
+    margin: 0;
+    width:100vw;
+    overflow:hidden;
+    position:relative;
+}
+.side2{
+    display: none;
+    position: absolute;
+    width: 50%;
+    right: 0px;
+    padding: 10px;
+    z-index: 344;
+    top: 0px;
+    height: 100%;
+    background: #9f5ae4;
+}
+.side1{
+    background: rgb(36, 22, 22);
+    min-height: 100%;
+    width: 100%;
+}
+/* animate right */
+.animate-right{
+    display: block;
+    animation:animateright 0.8s
+ }
+ @keyframes animateright{
+     from{
+         right:-300px;
+        opacity:0
+    }to{
+        right:0;
+        opacity:1
+    }
+}
+.big_box_img{
+    height: 200px;
+    width: 300px;
+    border: 1px solid gray;
+}
+.contain_img{
+    position: relative;
+}
+#more_details{
+    border-left: 5px solid #d4b7b7;
+    padding: 0 0 4px 7px;
+}
+.user_feeds{
+    position: relative;
+    margin-top: 40px;
+}
+.social_btn{
+    background: #032305a6;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border-radius: 8px;
+}
+  </style>
+</head>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="../index.html">
+            <!-- <img src="../img/Artboard 1.png" alt="LOGO"  width="100px;"> -->
+            NICKS
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./gallery.php">Gallery</a>
+            </li>    
+            <li class="nav-item">
+            <a class="nav-link" href="./blog.php">Blog</a>
+            </li>   
+            <li class="nav-item">
+            <a class="nav-link" href="./catalogue.html">Catalogue</a>
+            </li>   
+            <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.php">Contact</a>
+            </li>   
+          </ul>
+        </div>  
+      </nav>
+
+
+    <div class="row main-container">
+
+        <div class="side1 d-flex align-items-center justify-content-center">
+                <button class="btn btn-info btn-small" id="btn-preview">Preview</button>
+        </div>
+        <div class="side2 ">
+
+                <!-- button to close image details -->
+                <button class="btn btn-info btn-small mb-4" id="btn-view" style="float: right"> close</button>
+
+                <!-- image title -->
+                <div class="mt-4" id="img_title">
+                    <h3 class="text-center ">Image Title</h3> <hr>
+                </div>
+                
+                <!-- image -->
+                <div class="contain_img d-flex justify-content-center mb-4">
+                    <div class="big_box_img shadow text-center">
+                        <img src="blood_splash_2-wallpaper-1920x1080.jpg" height="200px" width="300px" class="w3-ifmage" alt="no image">
+                    </div>
+                    <button class="w3-button w3-display-left w3-display-middle w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+
+                <!-- description of image -->
+                <div class="m-4" id="img_description">
+                   <div><b>Description</b> </div> 
+                   <div class="m-2" id="more_details">
+                        some dummy text here
+                        some dummy text here
+                        some dummy text here
+                   </div>
+                </div>
+
+                <!-- user feedback -->
+                <div class="user_feeds ">
+                    <span class="w3-display-left social_btn">Like</span> 
+                    <span class="w3-display-right social_btn">comment</span>
+                </div>
+
+                <!-- share on social media -->
+                <div id="social_media">
+
+                </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+ <div id="ruth">
+     <span>
+         
+     </span>
+ </div>
+
+
+
+
+<body>
+
+
+
+    <script type="text/javascript" src="../public/js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="../public//bootstrap4/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+//    $("#form_post_img").submit(function (e) {
+//     e.preventDefault();
+
+function animateLeft(id) {
+    some_img = $("#box_img"+id).html();
+    $(".full_img").html(some_img);
+    console.log(some_img);
+    
+    
+}
+
+$("#hideDetails").click(function () {
+    $("#sideDetails").addClass("animate-left")
+})
+    
+//     $.ajax({
+//         url: './process_user.php',
+//         method: 'post',
+//         processData: false,
+//         contentType: false,
+//         data: new FormData(this),
+//         success: function (data) {
+//             $("#form_post_img")[0].reset();   
+//             console.log(data);
+            
+//         },
+//         error: function (data) {
+//             console.log(data);
+            
+//         }
+//     })
+
+// })
+
+// $(document).on("click", ".box_img", function () {
+//     alert()
+//     $(".whole").animate({
+
+//     })
+// })
+
+var animate_to_left = document.querySelector(".box_img");
+
+// animate_to_left.addEventListener("click", animateLeft);
+
+// $("#box_img01").click(function () {
+//     console.log("hello world");
+//     alert()
+    
+// })
+
+$(window).resize( function () {
+    box1_width = $("#box_img02").innerWidth();
+    // console.log(box1_width);
+    
+});
+
+
+$(document).on("click", "#btn-preview", function () {
+    $(".side2").addClass('animate-right');
+    $(".side1").animate({
+        width: '50%',
+    },"medium");
+});
+
+
+$(document).on("click", "#btn-view", function () {
+    // $(".side2").addClass('w3-animate-left');
+    $(".side2").slideDown();
+    $(".side1").animate({
+        width: '100%',
+    },"slow")
+    $(".side2").removeClass('w3-animate-left');
+    $(".side2").removeClass('animate-right');
+    
+})
+  </script>
+</body>
+</html>

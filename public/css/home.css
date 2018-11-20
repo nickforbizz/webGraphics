@@ -1,0 +1,237 @@
+.landingDiv {
+    height: 100vh;
+    background-color: aqua;
+  }
+
+  .imgCarousel {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #nav {
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+  }
+
+  #myNavToggler div a {
+    color: white;
+  }
+
+  .carousel-indicators {
+    display: block;
+    bottom: 40%;
+    left: 70%;
+  }
+
+  .carousel-indicators li {
+    margin-top: 10px;
+  }
+
+  .carousel-indicators div {
+    margin-bottom: 10px;
+    width: 90px;
+  }
+  .carousel-indicators .active span{
+    color: red;
+  }
+  .carousel-indicators .active li{
+    background-color:  red;
+  }
+  .carousel-indicators div>span {
+    color: white;
+  }
+
+  .carousel-indicators .active {
+    background-color: rgb(255,0,0,0);
+  }
+
+  .carousel-caption {
+    margin-bottom: 15%;
+  }
+
+  #allcategories span {
+    color: white;
+    top: 30px;
+    font-weight: bold;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+    padding-bottom: 25px
+  }
+
+  #allcategories span>label {
+    width: 200px;
+    border-right: 2px solid red;
+    border-left: 2px solid #070707;
+    margin-left: -2px;
+  }
+
+  #allcategories {
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+
+
+  .animateDiv {
+    animation: zoomIn;
+  }
+
+
+
+  input[type="text"] {
+    background: url(../img/search-white.png) no-repeat 0px 3px;
+    border: 0 none;
+    font: bold 12px Arial, Helvetica, Sans-serif;
+    color: #fff;
+    width: 0px;
+    padding: 8px 10px 8px 30px;
+    border-bottom: 0px #fff solid;
+    border-radius: 0px;
+    margin-right: -15px;
+    margin-left: 15px;
+    margin-top: 5px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+  }
+
+  input[type="text"]:hover {
+    width: 30vw;
+  }
+
+  .categoryWord {
+    width: 100%;
+  }
+
+@media (min-width: 768px) {
+  .categoryNum {
+    border-bottom: 2px solid white;
+    max-width: 130px;
+    transform: rotate(-90deg);
+    border-bottom: 2px solid white;
+  }
+}
+  .categoryNum {
+    /* max-width: 130px; */
+    /* transform: rotate(-90deg); */
+  }
+
+  .displayCat {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 576px) {
+    .displayCat {
+      max-width: 540px;
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .displayCat {
+      max-width: 720px;
+      font-size: 15px;
+    }
+  }
+  .inText {
+    height: 50px;
+    cursor: pointer;
+  }
+  .inText:hover{
+    color: blue;
+  }
+  .liner {
+    max-width: 0px;
+  }
+
+  .aboutMore,
+  .liner {
+    cursor: pointer;
+    transition: 1.5s all;
+  }
+
+  .aboutMore:hover .liner {
+    color: red;
+    max-width: 90px;
+  }
+
+  .aboutMore:hover {
+    color: red;
+  }
+
+  .liner hr {
+    height: 3px;
+    background: darkred;
+  }
+
+  .readMore {
+    padding-top: 3px;
+  }
+  .coverImg{
+    height: 400px;
+  }
+
+  @media (max-width: 576px) {
+    .wrapCategory {
+      max-width: 576px;
+      height: auto !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .wrapCategory {
+      max-width: 720px;
+      height: 80vh;
+    }
+    #close_allcategoriesSlided{
+      height: 100vh;
+    } .coverImg{
+        height: 100vh;
+      }
+  }
+      @media (max-width: 768px) {
+        .wrapCategory {
+          max-width: 720px;
+          height: 150px;
+        }
+      }
+
+  .wrapCategory{
+    margin-top:25px;padding-left: 25px;
+  }
+  .closeBounce{
+    animation-name: bounce;
+  }
+  .allcategoriesSlided {
+    position: absolute;
+    z-index: 2343;
+    display: none;
+    height: 100vh;
+    background-color: red;
+    color: black;
+    width: 100%;
+    background-image: url('../img/camouflage_desktop-wallpaper-2560x1440.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #container_allcategoriesSlided{
+    background-image: url('../img/camouflage_desktop-wallpaper-2560x1440.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .viewAll_categories{
+    cursor: pointer;
+  }
+  .carouselCaption_h2{
+    font-size: 3.5rem;
+  }

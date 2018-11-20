@@ -1,0 +1,1 @@
+{"id":"2","name":"apple","carbohydrates":"19.06","protein":"0.36","fats":"0.23","vitamins":"0","water":"0","minerals":"0","Total_Calories":"72"}

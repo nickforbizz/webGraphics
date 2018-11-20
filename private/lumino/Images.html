@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Images</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<style>
+	#output_img{
+		padding: 10px;
+		border-top-left-radius: 30px; 
+		height: 200px
+	}
+	
+	</style>
+	
+	<!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span>NICKS</span></a>
+
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<div class="profile-sidebar">
+			<div class="profile-userpic">
+				<img src="http://placehold.it/50/30a5ff/fff" class="img-responsive" alt="">
+			</div>
+			<div class="profile-usertitle">
+				<div class="profile-usertitle-name" id="Username">Username</div>
+				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="divider"></div>
+		<form role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+			<li><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
+			<!-- <li><a href="widgets.html"><em class="fa fa-calendar">&nbsp;</em> Widgets</a></li>
+			<li><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Charts</a></li>
+			<li class="active"><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> UI Elements</a></li> -->
+			<!-- <li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Alerts &amp; Panels</a></li> -->
+			<li><a href="blogs.php"><em class="fa fa-toggle-off">&nbsp;</em> Blogs</a></li>
+			<li><a href="Images.html"><em class="fa fa-toggle-off">&nbsp;</em> Images</a></li>
+			<li class="parent "><a data-toggle="collapse" href="#sub-item-1">
+				<em class="fa fa-navicon">&nbsp;</em> Multilevel <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li><a class="" href="#">
+						<span class="fa fa-arrow-right">&nbsp;</span> Sub Item 1
+					</a></li>
+					<li><a class="" href="#">
+						<span class="fa fa-arrow-right">&nbsp;</span> Sub Item 2
+					</a></li>
+					<li><a class="" href="#">
+						<span class="fa fa-arrow-right">&nbsp;</span> Sub Item 3
+					</a></li>
+				</ul>
+			</li>
+			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+		</ul>
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#">
+					<em class="fa fa-home"></em>
+				</a></li>
+				<li class="active">Forms</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- <h1 class="page-header">UI Elements</h1> -->
+			</div>
+		</div><!--/.row-->
+				
+		
+		<div class="row">
+			<div class="col-lg-12">				
+				<div class="panel panel-default">
+					<div class="panel-heading">Forms</div>
+					<div class="panel-body">
+						<div class="col-md-12">
+
+												<h2 class="text-center">Post Image</h2> <hr>
+							
+												<div class="rowk">
+												<form method="post" id="form_post_img">
+													<div class="form-group">
+														<label for="email">Name:</label>
+														<input 	 class="form-control" id="email" placeholder="Enter name" name="img_name" required>
+														<!-- <input class="form-control" placeholder="Success"> -->
+													</div>
+													<div class="form-group">
+														<label for="customRange">Rate it</label>
+														<input type="range" class="custom-range" id="customRange" name="points1">
+													</div>
+													<div class="form-group">
+													<label for="sel1">Select Image Category:</label>
+														<select name="img_categories" class="form-control custom-select-sm" id="sel1" required>
+															<option value="uncategorized" selected>Default</option>
+															<option value="effects">Effects</option>
+															<option value="people">People</option>
+															<option value="3d">3d</option>
+															<option value="mockups">Mock-ups</option>
+															<option value="manupilation">Manupilation</option>
+														</select>
+													</div>
+													<div class="mb-1">Image</div> 
+													<div class="custom-file mb-3">
+														<!-- <p>Upload Image</p> -->
+														<input type="file" class="custom-file-input" name="img_upload" id="customFile" onchange="preview_file(this)" required>
+														<label class="custom-file-label" for="customFile"></label>
+														<img id="output_img" alt="preview Image here">
+													</div>
+													<!-- <div class="form-group form-check">
+														<label class="form-check-label">
+														<input class="form-check-input" type="checkbox" name="remember"> Remember me
+														</label>
+													</div> -->
+													<input type="submit" name="upload_img" class="btn btn-primary" id="upload_img_id" value="Submit" />
+												</form>
+												</div>
+						<!-- post image ends -->
+						</div>
+					</div>
+				</div><!-- /.panel-->
+			</div><!-- /.col-->
+			<div class="col-sm-12">
+				<p class="back-link">&copy;Wainaina Nicholas <a href="https://www.medialoot.com">wainainanicholas.com</a></p>
+			</div>
+		</div><!-- /.row -->
+	</div><!--/.main-->
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- <script type="text/javascript" src="../../public/js/jquery.1.11.1.js"></script> -->
+    <script type="text/javascript" src="../../public/bootstrap4/js/bootstrap.min.js"></script>
+	<script>
+
+
+			// If User is undefined
+			if(localStorage.username==undefined){
+				window.location="../folder_login/login.php"
+			}
+
+			function charOneToUpper(s){
+				let y = s.charAt(0).toUpperCase();
+				let z = s.replace(s.charAt(0), y)
+				return z;
+			}
+			
+			
+			const user = charOneToUpper(localStorage.username);
+			const user_email = localStorage.user_email;
+			const user_image = localStorage.user_image;
+			const user_id = localStorage.user_id;
+			
+			// paste user at the session
+			 $("#Username").html(user);
+
+            $("#form_post_img").submit(function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '../post_data/upload_img.php',
+                    method: 'post',
+                    processData: false,
+                    contentType: false,
+                    data: new FormData(this),
+                    success: function(data){
+                        $("#form_post_img")[0].reset();
+                        // data = JSON.parse(data);
+                        console.log(data);
+                    },error: function(data){console.log(data);}
+    
+                })
+                
+			})
+			
+			var preview_file = function (e) {
+				var output_img = document.getElementById("output_img");
+				output_img.src=URL.createObjectURL(e.files[0]);
+			}
+        </script>
+</body>
+</html>

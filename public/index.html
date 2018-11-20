@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Design</title>
+  <link rel="stylesheet" href="./bootstrap4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/home.css">
+  <style media="screen">
+ 
+  </style>
+</head>
+
+<body>
+  <!-- allcategories slided -->
+  <div class="allcategoriesSlided">
+    <div class="container-fluid" id="container_allcategoriesSlided">
+      <div class="row">
+
+        <!-- <button type="button" class="close">
+          <span>&times;</span>
+        </button> -->
+
+        <div class="closeBounce bounce" style="position:absolute;right:10px;cursor:pointer;">
+          <span style="padding:10px;font-size:40px;">&times;</span> <br>
+          <strong>close</strong>
+        </div>
+
+        <div class="col-md-5 col-sm-12 pt-4">
+          <span class="m-4">categories</span>
+          <div class="row d-md-flex flex-md-wrap  align-content-between wrapCategory" >
+
+            <div class="displayCat col-sm-3 col-md-12 mt-1">
+              <div class="row inText" onmouseover="changeCategoryDetails('Wood_Carvings')">
+                <div class="col-sm-2 categoryNum" >01</div>
+                <div class="col-sm-8 categoryWord">Wood Carvings </div>
+              </div>
+            </div>
+            <div class="displayCat col-sm-3 col-md-12 mt-1">
+              <div class="row inText" onmouseover="changeCategoryDetails('African_Maasai_Sandals')">
+                <div class="col-sm-2 categoryNum" >02</div>
+                <div class="col-sm-8 categoryWord">African Maasai Sandals</div>
+              </div>
+            </div>
+            <div class="displayCat col-sm-3 col-md-12 mt-1">
+              <div class="row inText" onmouseover="changeCategoryDetails('Hand_made_Fashion_Jewelery')">
+                <div class="col-sm-2 categoryNum" >03</div>
+                <div class="col-sm-8 categoryWord">Hand-made Fashion Jewelery</div>
+              </div>
+            </div>
+            <div class="displayCat col-sm-3 col-md-12 mt-1">
+              <div class="row inText" onmouseover="changeCategoryDetails('Bags_and_Pouches')">
+                <div class="col-sm-2 categoryNum" >04</div>
+                <div class="col-sm-8 categoryWord">Bags and Pouches</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="row">
+            <div class="card" id="img_Category">
+              <img class="img-fluid card-img coverImg" src="./img/programming-wallpaper-1920x1080.jpg" alt="programming-wallpaper">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="row d-flex flex-wrap align-content-end " id="close_allcategoriesSlided">
+
+            <div class="">
+
+            </div>
+            <div class="m-4">
+              <div class="nameTag">
+                <h4 id="nameTag_id">Wood Carvings</h4>
+              </div>
+              <div class="tag row">
+                <div class="col-2"><strong>Tags: </strong></div>
+                <div class="col-10">
+                  <small id="tags_Details">Wooden Cutlery, African Game Carvings, Decos,            Traditional Themed Souvenir Carvings, Human Figures</small>
+                </div>
+              </div>
+              <div class="">
+                <p>A popular souvenir in Kenya. They are mainly made from Ebony tree, Baobab, Neem tree, Mahogany, Oak tree, Teak wood and Rosewood. The carvings are made by the talented Akamba people.</p>
+              </div>
+              <div class="viewAll_categories">
+                <h6>View all</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- allcategories slided  end-->
+
+  <div class="landingDiv">
+    <div class="landingsDiv carousel slide" id="carouselDiv" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <!--  Indicators -->
+        <ol class="carousel-indicators d-none d-md-block">
+          <div class="row indicate_div active">
+            <span class="col-6 span_indicate">01</span>
+            <li class="col-6" data-target="#carouselDiv" data-slide-to="0"></li>
+          </div>
+          <div class="row indicate_div">
+            <span class="col-6 span_indicate">02</span>
+            <li class="col-6" data-target="#carouselDiv" data-slide-to="1"></li>
+          </div>
+          <div class="row indicate_div">
+            <span class="col-6 span_indicate">03</span>
+            <li class="col-6" data-target="#carouselDiv" data-slide-to="2"></li>
+          </div>
+          <!-- <li data-target="#carouselDiv" data-slide-to="3"></li> -->
+        </ol>
+
+        <div class="carousel-item active">
+          <img class="img-fluid imgCarousel " src="./img/film_camera-wallpaper-2560x1440.jpg" alt="programming-wallpaper">
+          <div class="carousel-caption d-none d-md-block text-left">
+            <h2 class="carouselCaption_h2">Creating Livelihoods for Artisans</h2>
+            <small>
+                    A popular souvenir in Kenya. They are mainly made from Ebony <br> tree, Baobab, Neem tree, Mahogany, Oak tree, Teak wood <br> and Rosewood.
+                 </small>
+            <div class="mt-4 row aboutMore">
+              <div class="liner  col-6">
+                <hr> </div>
+              <div class="col-6 readMore"> <strong>Read More</strong></div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item -->
+        <div class="carousel-item">
+          <img class="img-fluid imgCarousel " src="./img/programming-wallpaper-1920x1080.jpg" alt="programming-wallpaper">
+          <div class="carousel-caption d-none d-md-block text-left">
+            <h2 class="carouselCaption_h2">Creating Livelihoods for Artisans</h2>
+            <small>
+                    A popular souvenir in Kenya. They are mainly made from Ebony <br> tree, Baobab, Neem tree, Mahogany, Oak tree, Teak wood <br> and Rosewood.
+                 </small>
+            <div class="mt-4 row aboutMore">
+              <div class="liner col-6 ">
+                <hr>
+              </div>
+              <div class="col-6 readMore"> <strong>Read More</strong></div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item -->
+        <div class="carousel-item">
+          <img class="img-fluid imgCarousel " src="./img/electricity_sign-wallpaper-2560x1440.jpg" alt="programming-wallpaper">
+          <div class="carousel-caption d-none d-md-block text-left">
+            <h2 class="carouselCaption_h2">Creating Livelihoods for Artisans</h2>
+            <small>
+                    A popular souvenir in Kenya. They are mainly made from Ebony <br> tree, Baobab, Neem tree, Mahogany, Oak tree, Teak wood <br> and Rosewood.
+                 </small>
+            <div class="mt-4 row aboutMore">
+              <div class="liner col-6">
+                <hr>
+              </div>
+              <div class="col-6 readMore"> <strong>Read More</strong></div>
+            </div>
+          </div>
+        </div>
+        <!-- end of item -->
+      </div>
+
+    </div>
+    <!-- end of caurosel -->
+    <div class="text-center fixed-bottom" id="allcategories">
+      <div class="row justify-content-center">
+        <div class="d-flex flex-wrap align-content-end" style="width:250px;">
+          <div class="col-12 align-content-end" id="animateCategory1" style="color:aqua; border-top:1px solid aqua;border-right:1px solid aqua; height:40px;padding-top: 20px;"> ALL CATEGORIES</div>
+          <div class="col-12" id="animateCategory2" style="color:aqua; border-bottom:1px solid aqua; border-left:1px solid aqua; height:20px"> </div>
+        </div>
+      </div>
+
+
+      <!-- <span class="text-center">
+          <label class="text-center">ALL CATEGORIES</label>
+        </span> -->
+
+    </div>
+  </div>
+  <!-- end of landingDiv -->
+
+
+  <!-- nav  -->
+  <nav class="navbar navbar-expand-sm fixed-top" id="nav">
+    <div class="navbar-header text-white">
+      <a href="#" class="navbar-brand"><img src="./img/Artboard 1.png" alt="LOGO"  width="100px;"></a>
+    </div>
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavToggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="myNavToggler">
+      <div class="navbar-nav ml-auto">
+        <a href="./index.html" class="active nav-item nav-link">Home </a>
+        <a href="./pages/about.html" class="nav-item nav-link">   About </a>
+        <a href="./pages/catalogue.html" class="nav-item nav-link">Catalogue  </a>
+        <a href="./pages/gallery.php" class="nav-item nav-link">Gallery  </a>
+        <a href="./pages/blog.php" class="nav-item nav-link">Blog   </a>
+        <a href="./pages/contact.php" class="nav-item nav-link">Contact</a>
+        <div class="nav-item nav-link">
+          <form method="get" action="/search" id="search">
+            <input id="searchInput" name="q" type="text" size="40" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script type="text/javascript" src="./js/jquery.1.11.1.js"></script>
+  <script type="text/javascript" src="./bootstrap4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/home.js"></script>
+  <script type="text/javascript">
+   
+  </script>
+
+</body>
+
+</html>

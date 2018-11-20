@@ -1,0 +1,95 @@
+#about_message{
+    margin-left: 40px;
+}
+#coming_soon_img{
+    height: 90vh;
+    width: 100vw;
+}
+#comming_soonn{
+    position: absolute;
+    font-size: -webkit-xxx-large;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+}
+#img_coming_soon{
+    background-image: url('../img/3d_forever-wallpaper-3840x2160.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+body, html {height: 100%}
+
+/* align center */
+#lol{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blueviolet;
+    border: 1px solid;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+.more-info{
+    position: absolute;
+    width: 60%;
+    right: 0px;
+    padding: 10px;
+    z-index: 344;
+    top: 0px;
+    height: 100%;
+    background: #9f5ae4;
+    display: none;
+}
+.allContainer{
+    min-height: 100%;
+}
+
+/* animate right */
+.animate-right{
+    display: block;
+    animation:animateright 0.8s
+ }
+ @keyframes animateright{
+     from{
+         right:-300px;
+        opacity:0
+    }to{
+        right:0;
+        opacity:1
+    }
+}
+
+#close_btn{
+    position:absolute;right:10px;cursor:pointer;
+}
+.animateDiv{
+    -webkit-animation: moveLeft 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes moveLeft{
+    from{
+        width: 100%;
+    }to{
+        width: 40%;
+    }
+}
+.more-info>ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+
+
+.main-container{
+
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    position:relative;
+}

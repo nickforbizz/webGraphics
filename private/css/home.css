@@ -1,0 +1,17 @@
+#main_area{
+    height: 97vh;
+    margin-top: 45px;
+    border-top: 2px solid darkblue;
+  }
+#nav{
+    margin-bottom: 40px;
+}
+#side_area{
+    border-right: 3px solid black;
+    padding: 0;
+}
+#card_accordion1{
+    border: 0;
+    border-radius: 0;
+    width: fit-content;
+}

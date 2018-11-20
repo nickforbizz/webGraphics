@@ -1,0 +1,31 @@
+.mailicon{
+    color: #048af9;
+    cursor: pointer;
+    transition: 0.75s all;
+  }
+  .mailicon:hover{
+    font-size: 60px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 5px;
+    border: 2px solid #048af9;
+  }
+  .mapicon{
+    color: red;
+    cursor: pointer;
+    transition: 0.7s all;
+  }
+  .mapicon:hover{
+    font-size: 60px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 20px;
+    border: 2px solid red;
+  }
+  .alignSpan{
+    margin-right: 0px;
+    margin-left: 80px;
+  }
+  #usermessage, #useremail, #username{
+    border-left: 2px solid #12d5f2;
+  }
